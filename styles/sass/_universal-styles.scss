@@ -1,0 +1,61 @@
+// site colors
+
+$black: #1e1713;
+$black-two: #161515;
+$dark-slate-blue: #1a315c;
+$turquoise-blue: #0cadc0;
+$light-sky-blue: #ccedfb;
+$white: #ffffff;
+
+// typography
+
+html {
+  font-size: 125%; /* 16px * 1.25 = 20px */
+}
+
+$base-font: 'Lato', sans-serif;
+$heading-font: 'Pacifico', cursive;
+
+@mixin font-details($font-size, $line-height, $letter-spacing, $font-weight) {
+     font-size: $font-size;
+     line-height: $line-height;
+     letter-spacing: $letter-spacing;  
+     font-weight: $font-weight;   
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     font-family: $heading-font;
+}
+
+p {
+     font-family: $base-font;
+     @include font-details(1rem, 1.5, 2px, 400)
+}
+
+button {
+     @include font-details(1.2rem, 1.2, 1.4px, normal);
+     font-family: $heading-font;
+     text-transform: lowercase;
+     border: none;
+     padding: 10px 35px 15px 34px;
+}
+
+button.btn-dark-blue {
+     background-color: $dark-slate-blue;
+     color: $white;
+}
+
+button.btn-light-blue {
+     background-color: $light-sky-blue;
+     color: $dark-slate-blue;
+}
+
+h1 {
+     @include font-details(3rem, 1.2, 1px, normal)
+}
+

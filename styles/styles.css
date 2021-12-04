@@ -243,6 +243,52 @@ template {
   left: 0;
 }
 
-body {
-  background-color: red;
+html {
+  font-size: 125%;
+  /* 16px * 1.25 = 20px */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", cursive;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+button {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+  font-weight: normal;
+  font-family: "Pacifico", cursive;
+  text-transform: lowercase;
+  border: none;
+  padding: 10px 35px 15px 34px;
+}
+
+button.btn-dark-blue {
+  background-color: #1a315c;
+  color: #ffffff;
+}
+
+button.btn-light-blue {
+  background-color: #ccedfb;
+  color: #1a315c;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-weight: normal;
 }
