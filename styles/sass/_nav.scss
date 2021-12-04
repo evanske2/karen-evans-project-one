@@ -1,0 +1,79 @@
+nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 10vh;
+}
+
+nav ul {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.nav-links,
+.logo {
+     width: 50%;
+}
+
+.logo a {
+     font-family: $heading-font;
+     color: $black;
+     @include font-details(1.8rem, 1.2, 1.4px, normal);
+
+     &:hover,
+     &:focus {
+          color: $turquoise-blue;
+     }
+}
+
+nav a {
+     text-decoration: none;
+}
+
+.nav-links li {
+     list-style: none;
+}
+
+.nav-links a {
+     @include font-details(1rem, 1.2, 1.4px, 700);
+     text-transform: uppercase;
+     font-family: $base-font;
+     color: $dark-slate-blue;
+     position: relative;
+
+     &:hover,
+     &:active {
+          color: $turquoise-blue;
+     }
+
+     &:hover::after,
+     &:active::after {
+          content: '';
+          width: 100%;
+          background-color: $turquoise-blue;
+          height: 2px;
+          margin: auto;
+          display: block;
+          position: absolute;
+          bottom: -15px;
+     }
+}
+
+footer {
+     background-color: $dark-slate-blue;
+     padding: 15px 0;
+     text-align: center;
+}
+
+footer p,
+footer a {
+     @include font-details(0.8rem, 1, 1.2px, 400);
+     color: $white;
+     text-decoration: none;
+}
+
+footer a:hover,
+footer a:focus {
+     color: $light-sky-blue;
+}

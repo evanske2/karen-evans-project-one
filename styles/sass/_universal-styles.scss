@@ -37,25 +37,63 @@ p {
      @include font-details(1rem, 1.5, 2px, 400)
 }
 
+h1 {
+     @include font-details(3rem, 1.2, 1px, normal);
+}
+
+h2 {
+     @include font-details(1.8rem, 2, 2.7px, normal);
+}
+
+
+// buttons
+
+.skip-link {
+     background-color: $black;
+     color: $white;
+     font-family: $base-font;
+     padding: 10px 20px;
+     margin-top: 20px;
+     text-align: center;
+}
+
 button {
      @include font-details(1.2rem, 1.2, 1.4px, normal);
      font-family: $heading-font;
      text-transform: lowercase;
      border: none;
      padding: 10px 35px 15px 34px;
+
+     &:hover {
+          cursor: pointer;
+     }
 }
 
 button.btn-dark-blue {
      background-color: $dark-slate-blue;
      color: $white;
+
+     &:hover,
+     &:focus {
+          background-color: lighten($dark-slate-blue, 10);
+     }
 }
 
 button.btn-light-blue {
      background-color: $light-sky-blue;
      color: $dark-slate-blue;
+
+     &:hover,
+     &:focus {
+          background-color: darken($light-sky-blue, 10);
+     }
 }
 
-h1 {
-     @include font-details(3rem, 1.2, 1px, normal)
+// containers
+
+.wrapper {
+     max-width: 1200px;
+     width: 90%;
+     margin: 0 auto;
 }
 
