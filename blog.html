@@ -4,10 +4,11 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="./styles/styles.css">
      <title>Textilee Blog</title>
 </head>
 <body>
-     
+     <a href="#maincontent" class="skip-link">Skip to main content.</a>
      <header>
           <div class="wrapper">
                <nav>
@@ -23,7 +24,7 @@
           </div>
      </header>
 
-     <main>
+     <main id="maincontent">
           <article>
                <div class="blog-post-image">
                     <img src="./textilee-assets/blog-post-image.jpg" alt="Stack of folded linen in cool blues and purples">
@@ -42,25 +43,27 @@
      <section class="comments">
           <h2>Comments:</h2>
           <div class="user-comment">
-               <img src="" alt="">
+               <img src="./textilee-assets/comment-1.jpg" alt="User profile picture">
                <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur. Accusamus suscipit laudantium in maiores reiciendis?</p>
           </div>
           <div class="user-comment">
-               <img src="" alt="">
+               <img src="./textilee-assets/comment-2.jpg" alt="User profile picture">
                <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur. Accusamus suscipit laudantium in maiores reiciendis?</p>
           </div>
 
           <form action="submit">
-               <label for="name">Name</label>
-               <input type="text" name="name" id="name">
+               <label for="name" class="sr-only">Name</label>
+               <input type="text" name="name" id="name" required="true" placeholder="Name">
 
-               <label for="email">Email address</label>
-               <input type="email" name="email" id="email">
+               <label for="email" class="sr-only">Email address</label>
+               <input type="email" name="email" id="email" required="true" placeholder="Email address">
 
-               <label for=""></label>
-               <input type="text">
+               <label for="message" class="sr-only">Comment</label>
+               <textarea name="message" id="message" cols="10" rows="5" placeholder="Comment"></textarea>
+
+               <button type="submit">Post comment</button>
           </form>
      </section>
 
@@ -75,13 +78,12 @@
           <div class="sidebar-blog-list">
                <h3>Recent Posts</h3>
                <ul>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                    <li>Lorem ipsum dolor sit.</li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
                </ul>
           </div>
-
      </aside>
 
      <footer>
