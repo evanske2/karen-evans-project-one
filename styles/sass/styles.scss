@@ -2,5 +2,347 @@
 @import "universal-styles";
 @import "nav";
 
+// homepage styles *********************************************************************
 
+// header ********************************
+
+header.homepage {
+     background-image: url(../textilee-assets/header-home.jpg);
+     background-position: right;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 95vh;
+}
+
+header.homepage h1 {
+     max-width: 55%;
+     padding-top: 50px;
+}
+
+.overlapping-hero-image {
+     position: absolute;
+     top: -55%;
+     max-width: 55%;
+}
+
+// about section ********************************
+
+.about-section {
+     position: relative;
+     padding: 220px 0 100px 0;
+
+     h2 {
+          color: $dark-slate-blue;
+     }
+}
+
+.about-content {
+     display: flex;
+     justify-content: space-between;
+}
+
+.about-info {
+     width: 65%;
+}
+
+.about-image {
+     position: relative;
+     height: fit-content;
+     z-index: 10;
+}
+
+.about-image::before {
+     content: '';
+     width: 100%;
+     height: 100%;
+     display: inline-block;
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     background-color: $turquoise-blue;
+     z-index: -10;     
+}
+
+// gallery section ********************************
+
+.image-gallery {
+     background-color: $dark-turquoise-blue; 
+     padding: 80px 0;
+
+     ul {
+          display: flex;
+     
+          li {
+               list-style: none;
+               width: calc((100% / 3) - 20px);
+          }
+          li:nth-child(2) {
+               margin: 0 20px;
+          }
+          img {
+               width: 100%;
+          }
+     }
+}
+
+// icon links section ********************************
+
+.middle-nav {
+     padding: 70px 0 100px 0;
+}
+
+ul.icon-site-links {
+     display: flex;
+     flex-wrap: wrap;
+
+     li {
+          list-style: none;
+          width: calc(50% - 10px);
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 30px;
+
+          a {
+               text-decoration: none;
+               
+          }
+          a h2:hover,
+          a h2:focus {
+               color: $turquoise-blue;
+          }
+
+          .icon-image {
+               width: 10%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               width: 35px;
+               height: 35px;
+               border-radius: 50px;
+               background-color: $turquoise-blue;
+          }
+
+          .icon-content {
+               width: 90%;
+               padding-left: 12px;
+          }
+
+          i {
+               line-height: 4;
+               font-size: 1rem;
+               font-weight: 900;
+               color: $white;
+          }
+     }
+
+     li:nth-child(1),
+     li:nth-child(3) {
+          padding-right: 10px;
+     }
+
+     h2 {
+          color: $dark-slate-blue;
+     }
+}
+
+// blog section ********************************
+
+.blog-section {
+     background-color: $dark-turquoise-blue;
+     padding: 40px 0 60px 0;
+     
+     h2,
+     p {
+          color: $white;
+     }
+
+     article {
+          display: flex;
+     }
+
+     .first-article {
+          align-items: flex-start;
+     }
+
+     .second-article {
+          align-items: flex-end;
+     }
+
+     .article-content{
+          width: 60%;
+          max-width: 600px;
+          margin: 0 auto;
+     }
+
+     .second-content {
+          text-align: right;
+     }
+     
+     .article-image {
+          width: 40%;
+     }
+
+     .article-image {
+          position: relative;
+          height: fit-content;
+          z-index: 10;
+
+          &::before {
+               content: '';
+               width: 100%;
+               height: 100%;
+               display: inline-block;
+               position: absolute;
+               background-color: $turquoise-blue;
+               z-index: -10;     
+          }
+
+          img {
+               width: 100%;
+          }
+     }
+
+     .first-image {
+          top: -70px;
+     }
+
+     .second-image {
+          bottom: -80px;
+     }
+
+     .first-image::before {
+          top: 10px;
+          right: -15px;
+     }
+
+     .second-image::before {
+          top: 10px;
+          right: 15px;
+     }
+
+     .row-reverse-desktop {
+          flex-direction: row-reverse;
+     }
+}
+
+.rope-background {
+     height: 50vh;
+     background-image: url(../textilee-assets/banner.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+// search section ********************************
+
+.search-section {
+     padding: 80px 0 120px 0;
+     text-align: center;
+
+     h2 {
+          color: $dark-slate-blue;
+     }
+}
+
+// blog page styles *********************************************************************
+
+header.blog-page {
+     background-image: url(../textilee-assets/blog-header.jpg);
+     background-position: top;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 55vh;
+}
+
+header.blog-page h1 {
+     max-width: 55%;
+     padding-top: 50px;
+}
+
+.flex-wrapper {
+     display: flex;
+     justify-content: space-between;
+}
+
+.blog-content {
+     width: 60%;
+
+     article {
+          margin-top: -100px;
+          background-color: $dark-turquoise-blue;
+
+
+          .blog-post-content {
+               padding: 50px 30px 80px 50px;
+               border-right: 10px solid $turquoise-blue;
+               border-bottom: 10px solid $turquoise-blue;
+
+               h2,
+               p {
+                    color: $white;
+               }
+
+               p {
+                    margin-bottom: 15px;
+               }
+          }
+          
+     }
+
+     .blog-post-image {
+          position: relative;
+          height: fit-content;
+          z-index: 10;
+
+          &::before {
+               content: '';
+               width: 100%;
+               height: 100%;
+               display: inline-block;
+               position: absolute;
+               left: 15px;
+               top: 10px;
+               background-color: $turquoise-blue;
+               z-index: -10;     
+          }
+
+          img {
+               width: 100%;
+          }
+     }
+}
+
+.comments {
+     padding: 50px 30px 80px 50px;
+
+     h2 {
+          color: $dark-slate-blue;
+          margin-bottom: 30px;
+     }
+}
+
+.user-comment {
+     display: flex;
+     align-items: flex-start;
+     justify-content: space-between;
+     margin-bottom: 60px;
+
+     div {
+          margin-left: 30px;
+
+          .comment-publish-details {
+               font-weight: 700;
+               font-size: 0.8rem;
+               margin-bottom: 10px;
+               color: lighten($dark-slate-blue, 10);
+          }
+     }     
+}
+
+.btn-form {
+     width: 100%;
+}
+
+.sidebar {
+     width: 30%;
+}
 

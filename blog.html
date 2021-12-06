@@ -13,7 +13,7 @@
 </head>
 <body>
      <a href="#maincontent" class="skip-link">Skip to main content</a>
-     <header>
+     <header class="blog-page">
           <div class="wrapper">
                <nav>
                     <div class="logo">
@@ -30,67 +30,69 @@
           </div>
      </header>
 
-     <main id="maincontent">
-          <article>
-               <div class="blog-post-image">
-                    <img src="./textilee-assets/blog-post-image.jpg" alt="Stack of folded linen in cool blues and purples">
+     <div class="flex-wrapper">
+          <main id="maincontent" class="blog-content">
+               <article>
+                    <div class="blog-post-image">
+                         <img src="./textilee-assets/blog-post-image.jpg" alt="Stack of folded linen in cool blues and purples">
+                    </div>
+                    <div class="blog-post-content">
+                         <h2>Our new collection</h2>
+                         <p class="blog-publish-details">Monday, October 5th, 2019 by Saron</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis maiores dolorem dolore dicta, eos officiis reprehenderit, rem consequatur deleniti facere. Porro, molestiae? Optio dicta fugit mollitia! Atque, illum fugit.</p>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore illum, quo sunt voluptates nihil atque beatae minima quis culpa, odit incidunt quos cumque similique, eaque consectetur iusto! Ipsam, cupiditate architecto earum doloribus eius quisquam possimus aspernatur commodi sit sequi amet. Ipsam soluta quis aspernatur!</p>
+                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, consectetur sed ut maiores iure velit nam repellat repudiandae, laudantium porro laborum provident esse ratione alias. Id cupiditate, ducimus cum, recusandae repellendus eveniet magni et, doloremque debitis sint ea reiciendis. Delectus, ratione voluptatem quis quasi obcaecati tempora? Illo incidunt doloremque numquam corporis reprehenderit sapiente. Placeat, optio.</p>
+                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis et mollitia deleniti harum ipsum facere unde odio expedita tempore reprehenderit corrupti placeat, consequatur consequuntur saepe?</p>
+                    </div>
+               </article>
+          
+               <section class="comments">
+                    <h2>Comments:</h2>
+                    <div class="user-comment">
+                         <img src="./textilee-assets/comment-1.jpg" alt="User profile picture">
+                         <div>
+                              <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur.</p>
+                         </div>
+                    </div>
+                    <div class="user-comment">
+                         <img src="./textilee-assets/comment-2.jpg" alt="User profile picture">
+                         <div>
+                              <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur.</p>
+                         </div>
+                    </div>
+                    <form action="submit">
+                         <label for="name" class="sr-only">Name</label>
+                         <input type="text" name="name" id="name" required="true" placeholder="Name">
+                         <label for="email" class="sr-only">Email address</label>
+                         <input type="email" name="email" id="email" required="true" placeholder="Email address">
+                         <label for="message" class="sr-only">Comment</label>
+                         <textarea name="message" id="message" cols="10" rows="5" placeholder="Comment"></textarea>
+                         <button type="submit" class="btn-dark-blue btn-form">Post comment</button>
+                    </form>
+               </section>
+          </main>
+
+          <aside class="sidebar">
+               <div class="sidebar-image">
+                    <img src="./textilee-assets/sidebar-image.jpg" alt="Rolls of fabric stacked with frayed ends">
                </div>
-               <div class="blog-post-content">
-                    <h2>Our new collection</h2>
-                    <p class="blog-publish-details">Monday, October 5th, 2019 by Saron</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis maiores dolorem dolore dicta, eos officiis reprehenderit, rem consequatur deleniti facere. Porro, molestiae? Optio dicta fugit mollitia! Atque, illum fugit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate dolore illum, quo sunt voluptates nihil atque beatae minima quis culpa, odit incidunt quos cumque similique, eaque consectetur iusto! Ipsam, cupiditate architecto earum doloribus eius quisquam possimus aspernatur commodi sit sequi amet. Ipsam soluta quis aspernatur!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, consectetur sed ut maiores iure velit nam repellat repudiandae, laudantium porro laborum provident esse ratione alias. Id cupiditate, ducimus cum, recusandae repellendus eveniet magni et, doloremque debitis sint ea reiciendis. Delectus, ratione voluptatem quis quasi obcaecati tempora? Illo incidunt doloremque numquam corporis reprehenderit sapiente. Placeat, optio.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis et mollitia deleniti harum ipsum facere unde odio expedita tempore reprehenderit corrupti placeat, consequatur consequuntur saepe?</p>
+               <div class="sidebar-content">
+                    <h3>Our mission</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque mollitia nostrum necessitatibus beatae, doloremque cum.</p>
                </div>
-          </article>
-     </main>
-
-     <section class="comments">
-          <h2>Comments:</h2>
-          <div class="user-comment">
-               <img src="./textilee-assets/comment-1.jpg" alt="User profile picture">
-               <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur. Accusamus suscipit laudantium in maiores reiciendis?</p>
-          </div>
-          <div class="user-comment">
-               <img src="./textilee-assets/comment-2.jpg" alt="User profile picture">
-               <p class="comment-publish-details">Tuesday December 9th, 2019 by Louise</p>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet debitis laborum quo molestias facere iure voluptatem quae consectetur nemo et, fuga inventore tenetur. Accusamus suscipit laudantium in maiores reiciendis?</p>
-          </div>
-
-          <form action="submit">
-               <label for="name" class="sr-only">Name</label>
-               <input type="text" name="name" id="name" required="true" placeholder="Name">
-
-               <label for="email" class="sr-only">Email address</label>
-               <input type="email" name="email" id="email" required="true" placeholder="Email address">
-
-               <label for="message" class="sr-only">Comment</label>
-               <textarea name="message" id="message" cols="10" rows="5" placeholder="Comment"></textarea>
-
-               <button type="submit">Post comment</button>
-          </form>
-     </section>
-
-     <aside>
-          <div class="sidebar-image">
-               <img src="./textilee-assets/sidebar-image.jpg" alt="Rolls of fabric stacked with frayed ends">
-          </div>
-          <div class="sidebar-content">
-               <h3>Our mission</h3>
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque mollitia nostrum necessitatibus beatae, doloremque cum.</p>
-          </div>
-          <div class="sidebar-blog-list">
-               <h3>Recent Posts</h3>
-               <ul>
-                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-                    <li><a href="#">Lorem ipsum dolor sit.</a></li>
-               </ul>
-          </div>
-     </aside>
+               <div class="sidebar-blog-list">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                         <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                         <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                         <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                         <li><a href="#">Lorem ipsum dolor sit.</a></li>
+                    </ul>
+               </div>
+          </aside>
+     </div>
 
      <footer>
           <p>Copyright &copy; 2019 <a href="https://junocollege.com/" target="blank">Juno College</a></p>
