@@ -284,6 +284,8 @@ h1 {
   letter-spacing: 1px;
   font-weight: normal;
   color: #1a315c;
+  z-index: 100;
+  position: relative;
 }
 
 h2 {
@@ -434,12 +436,9 @@ footer a:focus {
   color: #ccedfb;
 }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
 header.homepage {
   background-image: url(../textilee-assets/header-home.jpg);
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 95vh;
@@ -475,6 +474,7 @@ header.homepage h1 {
 
 .about-info {
   width: 65%;
+  margin-right: 20px;
 }
 
 .about-image {
@@ -483,6 +483,9 @@ header.homepage h1 {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 10;
+}
+.about-image img {
+  width: 100%;
 }
 
 .about-image::before {
@@ -957,3 +960,164 @@ aside.contact-info a {
 aside.contact-info a:hover, aside.contact-info a:focus {
   color: #254684;
 }
+
+/* Small desktops */
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p,
+.sidebar-blog-list a,
+.contact-info a {
+    font-size: 0.8rem;
+  }
+
+  header.homepage {
+    height: 65vh;
+  }
+
+  .overlapping-hero-image {
+    top: -25%;
+    max-width: 50%;
+  }
+
+  .blog-section .article-content {
+    width: 50%;
+  }
+
+  h2 {
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+}
+/* Large tablet */
+@media (max-width: 940px) {
+  .blog-section .first-article {
+    margin-bottom: 70px;
+  }
+
+  .rope-background {
+    height: 30vh;
+  }
+
+  .search-section {
+    padding: 50px 0 90px 0;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  header.homepage {
+    height: 55vh;
+  }
+
+  .overlapping-hero-image {
+    top: -10%;
+  }
+
+  .about-section {
+    padding-bottom: 70px;
+  }
+
+  .about-info {
+    width: 60%;
+  }
+
+  .about-image {
+    width: 30%;
+  }
+
+  .blog-section {
+    padding-top: 0;
+  }
+
+  article.first-article,
+.blog-section .row-reverse-desktop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog-section .article-content {
+    width: 100%;
+  }
+
+  .blog-section .article-image {
+    width: 60%;
+  }
+
+  .blog-section .first-image {
+    top: -40px;
+  }
+
+  .blog-section .second-image {
+    bottom: 45px;
+  }
+
+  .flex-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .blog-content {
+    width: 90%;
+  }
+
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 60px 30px;
+  }
+
+  .sidebar-image {
+    display: none;
+  }
+
+  .sidebar-content {
+    width: 50%;
+  }
+
+  .sidebar-blog-list {
+    width: 40%;
+  }
+
+  section.contact-form {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  aside.contact-info {
+    width: 35%;
+    margin: 70px auto 80px auto;
+    text-align: center;
+  }
+
+  input,
+textarea {
+    font-size: 0.8rem;
+  }
+}
+/* Landscape phones and down */

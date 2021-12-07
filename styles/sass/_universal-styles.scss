@@ -47,6 +47,8 @@ p {
 h1 {
      @include font-details(3rem, 1.2, 1px, normal);
      color: $dark-slate-blue;
+     z-index: 100;
+     position: relative;
 }
 
 h2 {

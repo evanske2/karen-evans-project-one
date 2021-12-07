@@ -1,7 +1,7 @@
 @import "setup";
 @import "universal-styles";
 @import "nav";
-@import "media-queries";
+
 
 // homepage styles *********************************************************************
 
@@ -9,7 +9,7 @@
 
 header.homepage {
      background-image: url(../textilee-assets/header-home.jpg);
-     background-position: right;
+     background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
      height: 95vh;
@@ -44,12 +44,17 @@ header.homepage h1 {
 
 .about-info {
      width: 65%;
+     margin-right: 20px;
 }
 
 .about-image {
      position: relative;
      height: fit-content;
      z-index: 10;
+
+     img {
+          width: 100%;
+     }
 }
 
 .about-image::before {
@@ -524,3 +529,7 @@ aside.contact-info {
           }
      }     
 }
+
+// media queries *********************************************************************
+
+@import "media-queries";
