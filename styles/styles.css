@@ -434,6 +434,9 @@ footer a:focus {
   color: #ccedfb;
 }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 header.homepage {
   background-image: url(../textilee-assets/header-home.jpg);
   background-position: right;
