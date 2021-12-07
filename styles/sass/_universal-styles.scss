@@ -108,3 +108,17 @@ button.btn-light-blue {
      margin: 0 auto;
 }
 
+.full-width-wrapper-left,
+.full-width-wrapper-right {
+     width: 95%;
+}
+
+.full-width-wrapper-left {
+     margin-right: 5%;
+}
+
+.full-width-wrapper-right {
+     margin-left: 5%;
+     margin-right: 0;
+}
+

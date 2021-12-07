@@ -21,8 +21,7 @@ header.homepage h1 {
 }
 
 .overlapping-hero-image {
-     position: absolute;
-     top: -55%;
+     margin-top: 65px;
      max-width: 55%;
 }
 
@@ -30,7 +29,7 @@ header.homepage h1 {
 
 .about-section {
      position: relative;
-     padding: 220px 0 100px 0;
+     padding: 150px 0 100px 0;
 
      h2 {
           color: $dark-slate-blue;
@@ -80,7 +79,7 @@ header.homepage h1 {
      
           li {
                list-style: none;
-               width: calc((100% / 3) - 20px);
+               width: calc((100% / 3) - 10px);
           }
           li:nth-child(2) {
                margin: 0 20px;
@@ -166,8 +165,11 @@ ul.icon-site-links {
           display: flex;
      }
 
+
+
      .first-article {
           align-items: flex-start;
+          margin-bottom: 30px;
      }
 
      .second-article {
