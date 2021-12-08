@@ -1,9 +1,27 @@
 /* Big screens */
 @media (min-width: 1450px){
+     header.homepage h1 {
+          padding-top: 200px;
+     }
+
+     .overlapping-hero-image {
+          display: none;
+     }
+
+     .about-section {
+          padding: 70px 0 100px 0;
+     }
+     
      .full-width-wrapper-left,
      .full-width-wrapper-right {
           margin: 0 auto;
           max-width: 1200px;
+     }  
+     
+     .lg-wrapper {
+          max-width: 1200px;
+          width: 90%;
+          margin: 0 auto;
      }
 }
 

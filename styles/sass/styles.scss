@@ -66,6 +66,11 @@ header.homepage h1 {
      right: 15px;
      background-color: $turquoise-blue;
      z-index: -10;     
+
+     // Definitely aware that this ( ^ ) is probably an overly complex solution, 
+     // but had a lot of trouble with box-shadow and making it responsive.
+     // It didn't seem to change size when the image got smaller?
+     // Would love some feedback here if possible, thanks!
 }
 
 // gallery section ********************************
