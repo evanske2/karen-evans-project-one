@@ -3,6 +3,7 @@ nav {
      align-items: center;
      justify-content: space-between;
      height: 10vh;
+     position: relative;
 }
 
 nav ul {
@@ -14,6 +15,17 @@ nav ul {
 .nav-links,
 .logo {
      width: 50%;
+}
+
+/* burger menu */
+
+.burger-toggle-label {
+     display: none;
+}
+
+#burger-toggle {
+     position: absolute;
+     opacity: 0;
 }
 
 .logo a {
