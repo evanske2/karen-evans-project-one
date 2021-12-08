@@ -479,7 +479,7 @@ header.homepage h1 {
 
 .about-section {
   position: relative;
-  padding: 150px 0 100px 0;
+  padding: 220px 0 100px 0;
 }
 .about-section h2 {
   color: #1a315c;
@@ -995,7 +995,7 @@ aside.contact-info a:hover, aside.contact-info a:focus {
 /* Desktops */
 @media (max-width: 1200px) {
   .about-section {
-    padding: 70px 0 100px 0;
+    padding: 120px 0 100px 0;
   }
 }
 /* Small desktops */
@@ -1023,7 +1023,7 @@ aside.contact-info a:hover, aside.contact-info a:focus {
   }
 
   .about-section {
-    padding: 200px 0 100px 0;
+    padding: 250px 0 100px 0;
   }
 
   .blog-section .first-article {
@@ -1103,7 +1103,7 @@ aside.contact-info a:hover, aside.contact-info a:focus {
   }
 
   .about-section {
-    padding: 160px 0 70px 0;
+    padding: 200px 0 70px 0;
   }
 
   .about-info {
