@@ -622,7 +622,7 @@ ul.icon-site-links h2 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .blog-section .second-article {
   -webkit-box-align: end;
@@ -1027,7 +1027,7 @@ aside.contact-info a:hover, aside.contact-info a:focus {
   }
 
   .blog-section .first-article {
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 
   .blog-section .article-content {
