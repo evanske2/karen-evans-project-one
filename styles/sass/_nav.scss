@@ -19,14 +19,14 @@ nav ul {
 
 /* burger menu */
 
-.burger-toggle-label {
-     display: none;
-}
+     .burger-toggle-label {
+          display: none;
+     }
 
-#burger-toggle {
-     position: absolute;
-     opacity: 0;
-}
+     #burger-toggle {
+          position: absolute;
+          opacity: 0;
+     }
 
 .logo a {
      font-family: $heading-font;

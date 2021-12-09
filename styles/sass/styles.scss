@@ -75,7 +75,7 @@ header.homepage h1 {
 
 // gallery section ********************************
 
-.image-gallery {
+.image-gallery {   
      background-color: $dark-turquoise-blue; 
      padding: 80px 0;
 
@@ -169,8 +169,6 @@ ul.icon-site-links {
      article {
           display: flex;
      }
-
-
 
      .first-article {
           align-items: flex-start;
@@ -282,7 +280,6 @@ header.blog-page h1 {
      article {
           margin-top: -100px;
           background-color: $dark-turquoise-blue;
-
 
           .blog-post-content {
                padding: 50px 30px 80px 50px;
