@@ -5,8 +5,10 @@
      // on click outside the menu, close the menu
 
 const burgerMenu = document.querySelector('.fa-bars');
+
+const navMenu = document.querySelector('.nav-links')
      
-console.log(burgerMenu)
+console.log(navMenu)
 
 burgerMenu.addEventListener('click', function() {
      // console.log('did it work');
